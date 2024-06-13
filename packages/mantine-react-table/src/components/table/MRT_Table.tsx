@@ -91,7 +91,7 @@ export const MRT_Table = <TData extends MRT_RowData>({
       }}
     >
       {enableTableHead && <MRT_TableHead {...commonTableGroupProps} />}
-      {memoMode === 'table-body' || columnSizingInfo.isResizingColumn ? (
+      {memoMode === 'table-body' ? (
         <Memo_MRT_TableBody
           {...commonTableGroupProps}
           tableProps={tableProps}
